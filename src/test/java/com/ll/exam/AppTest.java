@@ -26,16 +26,23 @@ public class AppTest {
     }
 
     @Test
-    public void 빼기_1() {
+    public void 빼기() {
         int rs = Calculator.calc("10 - 10");
 
         assertEquals(0, rs);
     }
 
     @Test
-    public void 곱하기_1() {
+    public void 곱하기() {
         int rs = Calculator.calc("10 * 10");
 
         assertEquals(100, rs);
+    }
+
+    @Test
+    public void 나누기() {
+        int rs = Calculator.calc("10 / 10");
+
+        assertEquals(1, rs);
     }
 }
